@@ -1,69 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proffy</title>
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/partials/page-study.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proffy</title>
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/partials/page-study.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
-</head>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    </head>
 
-<body id="page-study">
+    <body id="page-study">
 
-    <div id="container">
-
-        <header class="page-header">
-            <div class="top-bar-container">
-                <a href="/">
-                    <img src="/images/icons/back.svg" alt="Voltar">
-                </a>
-                <img src="/images/logo.svg" alt="Proffy">
-            </div>
-            <div class="header-content">
-                <strong>Esses são os Proffys disponiveis</strong>
-                <form id="search-teachers">
-                    <div class="select-block">
-                        <label for="subject"> Matéria </label>
-                        <select name="subject" id="subject">
-                            <option value="" disabled="" hidden="">Selecione uma opção</option>
-                            <option value="1">Artes</option>
-                            <option value="2">Biologia</option>
-                            <option value="3">Ciências</option>
-                            <option value="4">Educação Física</option>
-                            <option value="5">Física</option>
-                            <option value="6">Geografia</option>
-                            <option value="7">História</option>
-                            <option value="8">Matemática</option>
-                            <option value="9">Português</option>
-                            <option value="10">Química</option>
-                        </select>
-                    </div>
-                    <div class="select-block">
-                        <label for="weekday"> Dia da semana </label>
-                        <select name="weekday" id="weekday">
+        <div id="container">
+            <header class="page-header">
+                <div class="top-bar-container">
+                    <a href="/">
+                        <img src="/images/icons/back.svg" alt="Voltar">
+                    </a>
+                    <img src="/images/logo.svg" alt="Proffy">
+                </div>
+                <div class="header-content">
+                    <strong>Esses são os Proffys disponiveis</strong>
+                    <form id="search-teachers">
+                        <div class="select-block">
+                            <label for="subject">
+                                Matéria
+                            </label>
+                            <select name="subject" id="subject">
+                                <option value="" disabled="" hidden="">Selecione uma opção</option>
+                                <option value="1">Artes</option>
+                                <option value="2">Biologia</option>
+                                <option value="3">Ciências</option>
+                                <option value="4">Educação Física</option>
+                                <option value="5">Física</option>
+                                <option value="6">Geografia</option>
+                                <option value="7">História</option>
+                                <option value="8">Matemática</option>
+                                <option value="9">Português</option>
+                                <option value="10">Química</option>
+                            </select>
+                        </div>
+                        <div class="select-block">
+                            <label for="weekday">
+                                Dia da semana
+                            </label>
+                            <select name="weekday" id="weekday">
                                 <option value="" disabled="" hidden="">Selecione uma opção</option>
                                 <option value="1">Domingo</option>
                                 <option value="2">Segunda-feira</option>
                                 <option value="3">Terça-feira</option>
-                                <option value="4">Quarta-feira </option>
+                                <option value="4">Quarta-feira
+                                </option>
                                 <option value="5">Quinta-feira</option>
                                 <option value="6">Sexta-feira</option>
                             </select>
-                    </div>
-                    <div class="input-block">
-                        <label for="time">Hora (De 0 até 24)</label>
-                        <input name="time" id="time" type="time">
-                    </div>
-                    <button type="submit">Filtrar</button>
-                </form>
-            </div>
-        </header>
+                        </div>
+                        <div class="input-block">
+                            <label for="time">Hora</label>
+                            <input name="time" id="time" type="time">
+                        </div>
+                        <button type="submit">Filtrar</button>
+                    </form>
+                </div>
+            </header>
+            <main>
+                <article class="teacher-item">
+                    <header>
+                        <img src="https://avatars1.githubusercontent.com/u/44477779?s=460&u=31199b614c8009b3313f6151d29af357e5c06cc1&v=4" alt="Pedro Costa">
+                        <div>
+                            <strong>Pedro Costa</strong>
+                            <span>Química</span>
+                        </div>
+                    </header>
+                    <p>Entusiasta das melhores tecnologias de quimida avançada<br><br>
+                        Apaixonado por explodir coisas em laboratorios e por mudar a vida das pessoas através da experiencia. Mais de 200.00 pessoas ja passaram por uma das minhas explosões</p>
+                    <footer>
+                        <p>Preço/Hora<strong>R$ 20,00</strong>
+                        </p>
+                        <button type="button">
+                            <img src="/images/icons/whatsapp.svg" alt="Whatsapp">Entrar em contato
+                        </button>
+                    </footer>
+                </article>
 
-    </div>
+                <article class="teacher-item">
+                    <header>
+                        <img src="https://avatars0.githubusercontent.com/u/54821401?s=460&u=75442f777c8c39199489efd15c64cf1c17c224ae&v=4" alt="Lucas Faria">
+                        <div>
+                            <strong>Lucas Faria</strong>
+                            <span>Química</span>
+                        </div>
+                    </header>
+                    <p>Entusiasta das melhores tecnologias de quimida avançada<br><br>
+                        Apaixonado por explodir coisas em laboratorios e por mudar a vida das pessoas através da experiencia. Mais de 200.00 pessoas ja passaram por uma das minhas explosões</p>
+                    <footer>
+                        <p>Preço/Hora<strong>R$ 20,00</strong>
+                        </p>
+                        <button type="button">
+                            <img src="/images/icons/whatsapp.svg" alt="Whatsapp">Entrar em contato
+                        </button>
+                    </footer>
+                </article>
+            </main>
+        </div>
 
-</body>
+    </body>
 
 </html>
